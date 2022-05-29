@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01eac270-8101-4b2e-8ceb-8218629765bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/CSVSchema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/exception/NoSuchColumnException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/exception/NoSuchFileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/load/CSVLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/load/CSVLoaderImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/read/CSVReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/read/CSVReaderImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/write/CSVWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/write/CSVWriteOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filtering/collaborative/filtering/CollaborativeFiltering.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/filtering/collaborative/filtering/UserBasedFiltering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csv/parser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csv/parser/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +28,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e37b0d69-f433-4827-a893-cbb2e9d2b4d3" />
+        <option name="url" value="https://github.com/aadeshwagh/Recommendation-engine.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,6 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/aadeshwagh/java_machinelerning/recommendation-engine",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
