@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01eac270-8101-4b2e-8ceb-8218629765bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/write/CSVWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csv/parser/write/CSVWriteOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filtering/collaborative/filtering/CollaborativeFiltering.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filtering/collaborative/filtering/UserBasedFiltering.java" afterDir="false" />
+    <list default="true" id="01eac270-8101-4b2e-8ceb-8218629765bb" name="Changes" comment="Added write method in csv parser">
+      <change afterPath="$PROJECT_DIR$/src/main/java/filtering/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filtering/RatingMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filtering/Recommendation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csv/parser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csv/parser/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filtering/collaborative/filtering/CollaborativeFiltering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filtering/collaborative/filtering/CollaborativeFiltering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filtering/collaborative/filtering/UserBasedFiltering.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="filtering" />
+      <recent name="filtering.collaborative.filtering" />
       <recent name="csv.parser" />
     </key>
   </component>
@@ -88,6 +91,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653706050585</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added write method in csv parser">
+      <created>1653787931030</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653787931030</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +111,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added write method in csv parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added write method in csv parser" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/csv/parser/Main.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
