@@ -14,17 +14,22 @@ import java.util.Map;
 
 public class CollaborativeFiltering {
     public RatingMatrix averageRatings(RatingMatrix matrix) {
-
+        RatingMatrix matrix1 =new RatingMatrix();
+        Map<String,List<Item>> map = new HashMap<>();
         for(String user : matrix.getData().keySet()){
             List<Object> ratings = matrix.getData().get(user).stream().map(Item::getRating).toList();
             double average = average(ratings);
+            List<Item> list = new ArrayList<>();
             for(Item item : matrix.getData().get(user)){
-                item.setRating(Double.parseDouble(item.getRating().toString())-average);
+                Item item1 = new Item();
+                item1.setRating(Double.parseDouble(item.getRating().toString())-average);
+                item1.setColumnName(item.getColumnName());
+                list.add(item1);
             }
+            map.put(user,list);
         }
-
-
-        return matrix;
+        matrix1.setData(map);
+        return matrix1;
     }
     public double average( List<Object> array){
         double average = 0;

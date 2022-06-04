@@ -21,12 +21,14 @@ public class Main {
         CollaborativeFiltering filtering = new CollaborativeFiltering();
 
         RatingMatrix ratingMatrix = filtering.createRatingMatrix(csvSchema);
+
         RatingMatrix avgM = filtering.averageRatings(ratingMatrix);
+
 //        for(String user : avgM.getData().keySet().stream().limit(5).toList()){
 //            List<Object> ratings = avgM.getData().get(user).stream().map(Item::getRating).toList();
 //            System.out.println(ratings);
 //        }
-       // System.out.println(filtering.similarityMatrix(avgM,"User 1").stream().map(item->"{ "+item.getColumnName()+" = "+item.getRating()+" }").toList());
+       //System.out.println(filtering.similarityMatrix(avgM,"User 1").stream().map(item->"{ "+item.getColumnName()+" = "+item.getRating()+" }").limit(1).toList());
         System.out.println(main.recommendations(filtering.similarityMatrix(avgM,"User 2") , ratingMatrix).stream().map(o->"{\nName: "+o.getName()+"\n"+"Priority: "+o.getPriority()+"\nVote: "+o.getVote()+"\n}").toList());
 
 
@@ -55,22 +57,21 @@ public class Main {
           }
       });
 
-        //System.out.println(items.stream().map(item->"{ "+item.getColumnName()+" = "+item.getRating()+" }").toList());
+       // System.out.println(items.stream().map(item->"{ "+item.getColumnName()+" = "+item.getRating()+" }").toList().get(0));
         List<Recommendation> temp= new ArrayList<>();
         List<Item> user = matrix.getData().get(userName);
 
         for(int i = 0 ; i< items.size();i++){
-           
 
             for(Item item : matrix.getData().get(items.get(i).getColumnName())){
                 Recommendation rec = null;
-               double rat = Double.valueOf(item.getRating()+"");
-                System.out.println(item.getRating()+"");
+               double rat = Double.parseDouble(item.getRating().toString());
+                //System.out.println(item.getRating()+"");
                 if(rat > 3.0){
-                    for(int j = 0 ;j<temp.size();j++){
-                        rec = temp.get(j);
-                        if(rec.getName().equals(item.getColumnName())){
-                           rec.setVote(rec.getVote()+1);
+                    for (Recommendation recommendation : temp) {
+                        if (recommendation.getName().equals(item.getColumnName())) {
+                            rec = recommendation;
+                            rec.setVote(recommendation.getVote() + 1);
                         }
                     }
                         if(rec==null) {
@@ -88,10 +89,12 @@ public class Main {
         List<Recommendation> result = new ArrayList<>();
         for(Recommendation recom : temp){
             for(int i = 0 ; i< user.size();i++){
-                if(Double.parseDouble(user.get(i).getRating()+"")==0 && user.get(i).getColumnName().equals(recom.getName())){
+
+                if(Double.parseDouble(user.get(i).getRating().toString())== 0.0 && user.get(i).getColumnName().equals(recom.getName())){
                     result.add(recom);
                 }
             }
+
         }
 
       return  result;
